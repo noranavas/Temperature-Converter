@@ -1,0 +1,49 @@
+/*This adds the font style taken from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+/*This changes the backgdoun color of the page
+in this case is black*/
+body {
+    background: black;
+}
+/*style of the heading*/
+h1{
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+}
+/*This applies to the div tag in the HTML doc.
+The vh stands for viewport height.
+This will make the div halv of the entire window's height
+and they will be separate from eachother*/
+div {
+    height: 38vh;
+}
+/*Here it applies the style for all the inputs of type number*/
+input[type = number]{
+width: 100%; /*of the div*/
+height: 100%; /*of the div*/
+background: black; /*For the div background*/
+color: white; /*for the div's text color*/
+font-size: 7em; /*font size of the text inside the div*/
+text-align: center; /*receters the text in the middle of the div*/
+border: 90; 
+border-color: white;
+font-family: 'Oswald',sans-serif; /* This changes the font style to oswald and
+if that one doesn't exist on the browser, the backup style is sans-serif */
+}
+
+/*This changes the color of a placeholder with the sudo element.
+the webkit-input is added so it works not just on chrome,
+but on opera and safari; the moz-placeholder is for firefox
+and for microsoft edge is the ms-placeholder*/
+::-webkit-input-placeholder{
+    color: rgb(70, 69, 69);
+}
+::-moz-input-placeholder{
+    color: rgb(70, 69, 69);
+}
+::-ms--input-placeholder{
+    color: rgb(70, 69, 69);
+}
